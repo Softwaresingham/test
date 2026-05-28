@@ -5,4 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: show the trigger
-        run: echo "triggred using ${{github.event.name}} event"
+        run: echo "triggred using a(n) ${{github.event_name}} event"
+
