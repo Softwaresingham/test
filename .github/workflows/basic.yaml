@@ -12,6 +12,6 @@ jobs:
              - name: say bye world
                run: |
                      echo "Bye World"
-                     exit 1
+                     exit 0
              - name: say bye world again
                run: echo "Bye World Again"
