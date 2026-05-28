@@ -1,0 +1,17 @@
+name: first-workflow
+on: push
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello world
+              run: echo "Hello World"
+    echo-bye:
+        runs-on: ubuntu-latest
+        steps:
+             - name: say bye world
+               run: |
+                     echo "Bye World"
+                     exit 1
+             - name: say bye world again
+               run: echo "Bye World Again"
